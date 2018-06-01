@@ -4,6 +4,9 @@ import "normalize.css";
 import "./App.css";
 import armyKnife from "./swiss-army-knife.svg";
 
+// To test practice, todoApp
+import "./Todos/Stores/storeTest";
+
 class App extends Component {
   render() {
     return (

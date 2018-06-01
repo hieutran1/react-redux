@@ -1,0 +1,16 @@
+1> Designing the State Shape
+{
+  visibilityFilter: 'SHOW_ALL",
+  todos: [{
+      text: 'Consider using Redux',
+      completed: true,
+    },
+    {
+      text: 'Keep all state in a single tree',
+      completed: true
+    }
+  ]
+}
+
+2> Handling actions:
+(previousState, action) => newState
