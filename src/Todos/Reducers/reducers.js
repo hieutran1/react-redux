@@ -33,9 +33,7 @@ function todos(state = [], action){
   }
 }
 
-const reducers = combineReducers({
+export default combineReducers({
   visibilityFilter,
   todos
 });
-
-export default reducers;
