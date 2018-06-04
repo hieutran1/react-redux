@@ -10,7 +10,7 @@ const Message = (props) => {
   );
 };
 
-Message.propTypes = {
+Message.PropTypes = {
   message: PropTypes.string
 };
 export default Message;
