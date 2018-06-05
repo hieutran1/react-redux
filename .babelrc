@@ -1,5 +1,4 @@
 {
-  //"presets": ["env", "react", "es2015", "stage-1", "mobx"],
-  "presets": ["es2015", "stage-1", "env", "react"],
-  "plugins": ["transform-class-properties", "transform-regenerator", "transform-decorators-legacy"]
+  "presets": ["react", "es2015", "stage-1"],
+  "plugins": ["transform-decorators-legacy"]
 }
