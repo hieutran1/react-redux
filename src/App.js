@@ -20,6 +20,7 @@ class App extends Component {
         <section className="container">
           <Message message="Welcome to the react-starter. Start hacking away!" />
         </section>
+
       </div>
     );
   }
