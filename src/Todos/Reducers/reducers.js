@@ -18,6 +18,7 @@ function todos(state = [], action){
       return [
         ...state, 
         {
+          id: state[state.length - 1] ? state[state.length - 1].id + 1: 1,
           text: action.text, 
           completed: false
         }];
