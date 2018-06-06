@@ -11,7 +11,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
-        options: { presets: ["env"], plugins: ["transform-class-properties"] }
+        options: {
+          presets: ["react", "es2015", "stage-1", "env"],
+          plugins: ["transform-decorators-legacy"] }
       },
       {
         test: /\.css$/,
