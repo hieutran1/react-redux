@@ -4,7 +4,7 @@ const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   mode: "development",
-  entry: ["babel-polyfill", "./src/index.js"],
+  entry: ["babel-polyfill", "./src/index.mobx.js"],
   module: {
     rules: [
       {
@@ -13,7 +13,7 @@ module.exports = {
         loader: "babel-loader",
         options: {
           presets: ["react", "es2015", "stage-1", "env"],
-          plugins: ["transform-decorators-legacy"] }
+          plugins: ["transform-decorators-legacy", "transform-class-properties", "transform-regenerator"] }
       },
       {
         test: /\.css$/,
