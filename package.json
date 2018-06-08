@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "cross-fetch": "^2.2.1",
     "mobx": "^4.3.0",
     "mobx-react": "^5.1.2",
     "mobx-react-devtools": "^5.0.1",
