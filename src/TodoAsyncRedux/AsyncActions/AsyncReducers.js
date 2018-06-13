@@ -5,7 +5,6 @@ import {
   REQUEST_POSTS,
   RECEIVE_POSTS
  } from "./AsyncActions";
-import { stat } from "fs";
 
 function selectedSubreddit(state='reactjs', action) {
   switch(action.type) {
