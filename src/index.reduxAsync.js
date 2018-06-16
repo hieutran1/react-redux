@@ -1,4 +1,4 @@
-import Root from "./TodoAsyncRedux/containers/Root";
+import Root from "./TodoReduxAsync/containers/Root";
 import { render } from "react-dom";
 import React from "react";
 
