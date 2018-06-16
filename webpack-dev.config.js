@@ -4,7 +4,8 @@ const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   mode: "development",
-  entry: ["babel-polyfill", "./src/index.mobx.js"],
+  entry: ["babel-polyfill", "./src/index.reduxAsync.js"],
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {
@@ -38,5 +39,7 @@ module.exports = {
     port: 3001,
     publicPath: "http://localhost:3001/dist"
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
