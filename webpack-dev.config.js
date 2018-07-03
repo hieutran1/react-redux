@@ -4,7 +4,7 @@ const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   mode: "development",
-  entry: ["babel-polyfill", "./src/index.reduxAsync.js"],
+  entry: ["babel-polyfill", "./src/index.mobx-todo.js"],
   devtool: 'eval-source-map',
   module: {
     rules: [
