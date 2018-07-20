@@ -6,12 +6,9 @@
 
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
+<title>About</title>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <title>About</title>
 </head>
 <body>
 
@@ -23,12 +20,61 @@
                 Musio
             </a>
         </div>
-
-        <ul class="nav navbar-nav">
-            <li ><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">About</a></li>
-        </ul>
-
+        <div>
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">About</a></li>
+            </ul>
+        </div>
+        
+        <br/>
+        <div>
+            <audio controls>
+                <source src = "https://www.tutorialspoint.com/html5/audio.ogg" type = "audio/ogg" />
+                <source src = "https://www.tutorialspoint.com/html5/audio.wav" type = "audio/wav" />
+                Your browser does not support the <audio> element.
+             </audio>
+        </div>
+        <div>
+            <audio controls autobuffer>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+        <form>         
+            <video controls autobuffer width = "300" height = "200" src = "https://www.tutorialspoint.com/html5/foo.mp4">
+            Your browser does not support the video element.
+            </video>
+            <br />
+            <input type = "button" onclick = "PlayVideo();" value = "Play"/>
+         </form>
+         <div>m4a
+            <audio controls >
+                <source src = "Media/test.m4a" type = "audio/mp4" />
+                Your browser does not support the <audio> element.
+             </audio>
+         </div>
+         <div>mp3
+            <audio controls >
+                <source src = "Media/test.mp3" type = "audio/mpeg" />
+                Your browser does not support the <audio> element.
+             </audio>
+         </div>
+         <div>wav
+            <audio controls >
+                <source src = "Media/test.wav" type = "audio/wav" />
+                Your browser does not support the <audio> element.
+             </audio>
+         </div>
+         <div>wma
+            <audio controls >
+                <source src = "Media/test.wma" type = "audio/mpeg" />
+                <source src = "Media/test.wma" type = "audio/ogg" />
+                <source src = "Media/test.wma" type = "audio/wav" />
+                Your browser does not support the <audio> element.
+             </audio>
+         </div>
     </div>
 </nav>
 
