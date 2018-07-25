@@ -4,7 +4,7 @@ const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   mode: "development",
-  entry: ["babel-polyfill", "./src/index.styledAntd.js"],
+  entry: ["babel-polyfill", "./src/DraftJS/index.js"],
   devtool: 'eval-source-map',
   module: {
     rules: [
