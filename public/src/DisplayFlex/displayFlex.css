@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row nowrap; */
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+
+}
+
+.flex-item {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    /* flex: 0 1 auto; */
+    align-self: auto;
+}
