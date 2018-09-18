@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 
 class Counter extends Component {
   //MOUNTING
@@ -140,3 +140,8 @@ export class App extends Component {
         );
     }
 }
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);
