@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { App } from "./AntdLayout";
+import { App } from "./Antd-autocomplete";
 
 ReactDOM.render(
 	<App />,
