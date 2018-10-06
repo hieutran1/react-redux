@@ -1,1 +1,1 @@
-import "./HtmlConvertExample";
+import "./CustomPlugin";
