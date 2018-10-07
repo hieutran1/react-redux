@@ -1,1 +1,1 @@
-import "./CustomPlugin";
+import "./EntityExample";
