@@ -41,9 +41,10 @@ class LinkEditorExample extends React.Component {
     const {editorState} = this.state;
     const selection = editorState.getSelection();
     if (!selection.isCollapsed()) {
-      const contentState = editorState.getCurrentContent();
       const startKey = editorState.getSelection().getStartKey();
       const startOffset = editorState.getSelection().getStartOffset();
+
+      const contentState = editorState.getCurrentContent();
       const blockWithLinkAtBeginning = contentState.getBlockForKey(startKey);
       const linkKey = blockWithLinkAtBeginning.getEntityAt(startOffset);
       let url = '';

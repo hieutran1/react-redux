@@ -1,1 +1,1 @@
-import "./EntityExample";
+import "./DecoratorExample";
