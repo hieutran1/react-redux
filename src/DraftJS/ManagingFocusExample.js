@@ -9,12 +9,12 @@ class PlainTextEditorExample extends React.Component {
     this.state = {editorState: EditorState.createEmpty()};
     this.onChange = (editorState) => this.setState({editorState});
     this.logState = () => console.log(this.state.editorState.toJS());
-    this.setDomEditorRef = ref => this.domEditor = ref;
-    this.focus = () => {this.domEditor.focus();};
+    this.myEditor = React.createRef();
+    this.focus = () => {this.myEditor.current.focus();};
   }
           
   componentDidMount(){
-    this.domEditor.focus();
+    this.myEditor.current.focus();
   }
   
   render() {
@@ -25,7 +25,7 @@ class PlainTextEditorExample extends React.Component {
             editorState={this.state.editorState}
             onChange={this.onChange}
             placeholder="Enter some text..."
-            ref={this.setDomEditorRef}
+            ref={this.myEditor}
           />
         </div>
         <input

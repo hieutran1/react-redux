@@ -1,1 +1,1 @@
-import "./ManagingFocusExample";
+import "./MediaEditorExample";
