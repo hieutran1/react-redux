@@ -1,1 +1,1 @@
-import "./DecoratorExample";
+import "./KeyBindingExamle";
