@@ -1,1 +1,1 @@
-import "./MediaEditorExample";
+import "./ColorfulEditor";
