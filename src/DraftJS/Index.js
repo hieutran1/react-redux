@@ -1,1 +1,1 @@
-import "./ColorfulEditor";
+import "./ComplexInlineStyleExample";
