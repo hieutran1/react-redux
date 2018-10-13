@@ -12,13 +12,26 @@ class MyEditor extends React.Component {
     this.setState({editorState});
   };
 
-  _onBoldClick() {
+  onBoldClick = (e) => {
+    e.preventDefault();
     const newState = RichUtils.toggleInlineStyle(this.state.editorState, 'BOLD');
-    if(newState) {
-      this.onChange(newState);
-      return 'handled';
-    }
-    return 'not-handled';
+    this.onChange(newState);
+    // if(newState) {
+    //   this.onChange(newState);
+    //   return 'handled';
+    // }
+    // return 'not-handled';
+  }
+
+  onItalicClick = (e) => {
+    e.preventDefault();
+    const newState = RichUtils.toggleInlineStyle(this.state.editorState, 'ITALIC');
+    this.onChange(newState);
+    // if(newState) {
+    //   this.onChange(newState);
+    //   return 'handled';
+    // }
+    // return 'not-handled';
   }
 
   handleKeyCommand = (command, editorState) => {
@@ -33,7 +46,8 @@ class MyEditor extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this._onBoldClick.bind(this)}>Bold</button>
+        <button onMouseDown={this.onBoldClick}>Bold</button>
+        <button onMouseDown={this.onItalicClick}>Italic</button>
         <Editor
           editorState={this.state.editorState}
           handleKeyCommand={this.handleKeyCommand}

@@ -1,1 +1,1 @@
-import "./ComplexInlineStyleExample";
+import "./RichStyling";
