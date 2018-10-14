@@ -28,7 +28,15 @@ class HTMLConvertExample extends React.PureComponent {
       `<h3>Header</h6><br/><br/>
       <b>Bold text</b>, <i>Italic text</i><br/><br/>
       <a href="http://www.facebook.com">Example link</a>|<a href="http://www.facebook.com">Example link 2</a><br /><br/>
-      <img src="img/image.png" height="112" width="200" />`;
+      <img src="img/image.png" height="112" width="200" /><br /><br/>
+      <ul>
+        <li>option 1</li>
+        <li>option 2</li>
+      </ul><br /><br/>
+      <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </select>`;
 
     const blocksFromHTML = convertFromHTML(sampleMarkup);
     const state = ContentState.createFromBlockArray(
