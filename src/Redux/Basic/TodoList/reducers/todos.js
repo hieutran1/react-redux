@@ -16,7 +16,7 @@ const todos = (state = [], action) => {
           : todo
       )
     default:
-      return state
+      return state;
   }
 }
 
