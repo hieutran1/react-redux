@@ -13,6 +13,14 @@ function receiveTodos(todos) {
   };
 }
 
+export const FAILURE_TODOS = 'FAILURE_TODOS';
+function failureTodos(error) {
+  return {
+    type: FAILURE_TODOS,
+    error
+  };
+}
+
 export default function fetchTodos() {
   return dispatch => {
     dispatch(requestTodos());
@@ -23,7 +31,8 @@ export default function fetchTodos() {
           setTimeout(() => {
             dispatch(receiveTodos(todos));
           }, 2000);
-        }
+        },
+        error => dispatch(failureTodos(error))
       );
   };
 }

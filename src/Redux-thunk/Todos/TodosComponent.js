@@ -23,10 +23,13 @@ class TodosComponent extends Component {
     this.props.getTodos();
   }
   render() {
-    const { todos, isFetching } = this.props;
+    const { todos, isFetching, error } = this.props;
 
     return (
       <div>
+        {!error && (
+          <div>{error}</div>
+        )}
         {!isFetching && (
           <button onClick={this.handleRefreshClick}>Refresh</button>
         )}
@@ -44,14 +47,15 @@ class TodosComponent extends Component {
 
 const mapStateToProps = (state) => {
   const { todosReducer } = state;
-  const { todos, isFetching } = todosReducer
+  const { todos, isFetching, error } = todosReducer
   || {
     todos: [],
     isFetching: true
   };
   return {
     todos,
-    isFetching
+    isFetching,
+    error
   };
 };
 const mapDispatchToProps = (dispatch) => {
